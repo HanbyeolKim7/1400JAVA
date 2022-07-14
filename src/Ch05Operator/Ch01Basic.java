@@ -78,21 +78,22 @@ public class Ch01Basic {
 		
 		
 		//삼항연산자(If문으로 대체가능, 단순구조의 반복문)
-		Scanner sc = new Scanner(System.in);
-		System.out.print("점수입력 : ");
-		int score = sc.nextInt();
-		char grade = (score>90)? 'A':'B';
-		System.out.println("grade : " + grade);
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("점수입력 : ");
+//		int score = sc.nextInt();
+//		char grade = (score>90)? 'A':'B';
+//		System.out.println("grade : " + grade);
 		
 		//문제
 		//두 수를 입력받아 큰수를 출력하세요
-	    //Scanner sc = new Scanner(System.in);
-	    //System.out.print("첫번째 수 : ");
-	    //int num1 = sc.nextInt();
-		//System.out.print("두번째 수 : ");
-		//int num2 = sc.nextInt();
-		//char number = (num1 > num2)? 'num1':'num2';
-		//System.out.println("둘 중 더 큰 수는 : " + number);
+	    Scanner sc = new Scanner(System.in);
+	    System.out.print("1 정수 : ");
+	    int n1 = sc.nextInt();
+		System.out.print("2 정수 : ");
+		int n2 = sc.nextInt();
+		
+		int result=(n1>n2)?n1:n2;
+		System.out.println("큰수 : " + result);
 		
 		
 		
