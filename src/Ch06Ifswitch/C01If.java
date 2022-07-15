@@ -158,31 +158,78 @@ public class C01If {
 		//평균이 60점 미만이냐? -> 불합격
 		//아니라면 -> 합격
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.print("국어 점수 : ");
-		int kor = sc.nextInt();
-		System.out.print("영어 점수 : ");
-		int eng = sc.nextInt();
-		System.out.print("수학 점수 : ");
-		int mat = sc.nextInt();
-		double avg = (double)(kor+eng+mat)/3;
-		if(kor<40) {
-			System.out.println("불합격!");
+		//Scanner sc = new Scanner(System.in);
+		//System.out.print("국어 점수 : ");
+		//int kor = sc.nextInt();
+		//System.out.print("영어 점수 : ");
+		//int eng = sc.nextInt();
+		//System.out.print("수학 점수 : ");
+		//int mat = sc.nextInt();
+		//double avg = (double)(kor+eng+mat)/3;
+		//if(kor<40) {
+		//	System.out.println("불합격!");
+		//}
+		//else if(eng<40) {
+		//	System.out.println("불합격!");
+		//}
+		//else if(mat<40) {
+		//	System.out.println("불합격!");
+		//}
+		//else if(avg<60.0) {
+		//	System.out.println("불합격!");
+		//}
+		//else {
+		//	System.out.println("합격!");
+		//}
+		
+		
+	    Scanner sc = new Scanner(System.in);
+	    int avg=sc.nextInt();
+	    
+	    if(avg>=90)
+	    {
+	    	System.out.println("A");
+	    }
+	    else if(avg>=80)
+	    {
+	    	System.out.println("B");
+	    }
+	    else if(avg>=70)
+		{
+			System.out.println("c");
 		}
-		else if(eng<40) {
-			System.out.println("불합격!");
+		else if(avg>=60)
+		{
+			System.out.println("D");
 		}
-		else if(mat<40) {
-			System.out.println("불합격!");
+		else
+		{
+			System.out.println("F");
 		}
-		else if(avg<60.0) {
-			System.out.println("불합격!");
-		}
-		else {
-			System.out.println("합격!");
-		}
+		
+		
 		//문제
 		//세 정수를 입력받아서 큰수를 출력하세요(단순IF문으로만)
+		//Scanner sc = new Scanner(System.in);
+		
+		//System.out.print("세 정수 입력 : ");
+		//int n1=sc.nextInt();
+		//int n2=sc.nextInt();
+		//int n3=sc.nextInt();
+		
+		//if(n1>=n2 && n1>=n3)
+		//{
+		//	System.out.println("큰수 : " + n1);
+		//}
+		//else if(n2>=n1 && n2>=n3)
+		//{ 
+		//	System.out.println("큰수 : " + n2);
+		//}
+		//else if(n3>=n1 && n3>=n1)
+		//{
+		//	System.out.println("큰수 : " + n3);
+		//}
+		
 
 	}
 
