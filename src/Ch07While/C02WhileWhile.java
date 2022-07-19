@@ -177,6 +177,9 @@ public class C02WhileWhile {
 		//높이 입력받아 출력하는 다이아몬드
 		//높이 입력받아 출력하는 모래시계
 		
+		
+		
+		
 		//   *
 		//  ***
 		// *****
@@ -185,6 +188,55 @@ public class C02WhileWhile {
 		//  ***
 		//   *
 		
+		//i(행)	j(공백)	k(별)
+		//0		0-2		0-0
+		//1		0-1		0-2				
+		//2		0-0		0-4	
+		//3		- 		0-6
+		//4		0-0		0-4
+		//5		0-1		0-2
+		//6		0-2		0-0
+		//j>=2-i
+		//k>=2*i
+		
+		int j=0;
+		int i=0;
+		int k=0;
+		while(i<7)
+		{
+			if(i<=3)
+			{
+				j=0;
+				while(j<=2-i)
+				{
+					System.out.print(" ");
+					j++;
+				}
+				k=0;
+				while(k<=2*i)
+				{
+					System.out.print("*");
+					k++;
+				}
+			}
+			else
+			{
+				j=0;
+				while(j<=i-4)
+				{
+					System.out.print(" ");
+					j++;
+				}
+				k=0;
+				while(k<=12-(2*i))
+				{
+					System.out.print("*");
+					k++;
+				}
+			}
+			System.out.println();
+			i++;
+		}
 	}
 
 }
