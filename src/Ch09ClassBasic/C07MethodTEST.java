@@ -1,5 +1,15 @@
 package Ch09ClassBasic;
 
+
+class Calculator
+{
+	//기능
+	int sum(int x, int y){return x+y;}
+	int sub(int x, int y){return x-y;}
+	void mul(int x, int y) {System.out.println(x*y);}
+	void div(int x, int y) {System.out.println((double)x/y);}
+}
+
 public class C07MethodTEST {
 
 	public static void main(String[] args) {
