@@ -1,22 +1,21 @@
 package Ch09ClassBasic;
 
+import java.util.Scanner;
 class Grade
 {
 	int math;
 	int science;
 	int english;
-	Grade(int math, int science. int english){
+	Grade(int math,int science,int english){
 		this.math=math;
 		this.science=science;
-		this.englich=english;
+		this.english=english;
 	}
-	dounle average() {
-		reutrn(double)(math+science+english)/3;
+	double average() {
+		return (double)(math+science+english)/3;
+		
 	}
 }
-
-import java.util.Scanner;
-
 public class C13Prac {
 
 	 
