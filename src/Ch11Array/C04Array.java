@@ -37,7 +37,7 @@ public class C04Array {
 		//각열의 총합 출력
 		int colsum[] = new int[arr[0].length];
 		
-		for(int j=0;j<arr[j].length;j++)
+		for(int j=0;j<arr[0].length;j++)
 		{
 			for(int i=0;i<arr.length;i++) {
 				colsum[j]+=arr[i][j];			}
